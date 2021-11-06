@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import {StyleSheet,Text,View} from 'react-native';
-import { Focus } from "./src/features/focus"
 
 
-export default function App() {
-  const [ focusTask , setFocusTask ] = useState(null)
+export function Focus() {
+  
   return (
     <View style={styles.container}>
-      { focusTask ? <Text>Habit Builder</Text> : <Focus />}
+      <Text>What habit are you willing to practice?</Text> 
     </View>
   );
 }
