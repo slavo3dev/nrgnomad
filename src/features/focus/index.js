@@ -14,7 +14,7 @@ export function Focus() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#346AAF',
     alignItems: 'center',
     justifyContent: 'center',
   },
