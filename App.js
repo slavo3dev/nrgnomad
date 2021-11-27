@@ -7,7 +7,8 @@ export default function App() {
   const [ focusTask , setFocusTask ] = useState(null)
   return (
     <View style={styles.container}>
-      { focusTask ? <Text>Habit Builder</Text> : <Focus />}
+      {focusTask ? <Text>Habit Builder</Text> : <Focus addFocus={setFocusTask} />}
+      <Text>{focusTask}</Text>
     </View>
   );
 }
@@ -16,6 +17,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#346AAF',
-    padding: 50
+    paddingTop: 60,
+    paddingLeft: 6,
+    paddingRight: 6
   },
 });
