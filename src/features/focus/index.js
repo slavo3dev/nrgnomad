@@ -13,7 +13,7 @@ export function Focus() {
       </View>
       <View style={styles.inputContainer}>
         <TextInput style={styles.textInput} />
-        <View style={style.btnContainer}>
+        <View style={styles.btnContainer}>
           <RoundedBtn title={"+"} size={50}  />
         </View>
       </View>
@@ -23,8 +23,6 @@ export function Focus() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    borderWidth: 5,
-    borderColor: 'black',
   },
   titleContainer: {
     flex: 0.1,
@@ -37,12 +35,11 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     flex: 0.1,
-    borderWidth: 5,
-    borderColor: 'red',
-    flexDirection: "row"
+    flexDirection: 'row'
   },
   textInput: {
-    flex: 1
+    flex: 1,
+    marginRight: 5
   },
   btnContainer: {
     justifyContent: 'center'
