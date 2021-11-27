@@ -7,7 +7,8 @@ export default function App() {
   const [ focusTask , setFocusTask ] = useState(null)
   return (
     <View style={styles.container}>
-      {focusTask ? <Text>Habit Builder</Text> : <Focus addFocus={setFocusTask} />}
+      {focusTask ? <Text>Habit TO FOCUS: </Text> : <Focus addFocus={setFocusTask} />}
+      {console.log("[APP]: ", focusTask)}
       <Text>{focusTask}</Text>
     </View>
   );

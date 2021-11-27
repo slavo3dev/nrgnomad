@@ -1,11 +1,13 @@
-import React  from 'react';
+import React, {useState}  from 'react';
 import {Text,View} from 'react-native';
 import {TextInput} from 'react-native-paper'
 import {RoundedBtn} from '../../components/roundedBtn';
 import styles from "./focus.styles"
 
 
-export function Focus({ addFocusTask }) {
+export function Focus({ addFocus }) {
+
+  const [storeTextInput,setStoreTextInput] = useState(null)
   
   return (
     <View style={styles.container}>
@@ -14,10 +16,14 @@ export function Focus({ addFocusTask }) {
       </View>
       <View style={styles.inputContainer}>
         <TextInput style={styles.textInput}
-          onSubmitEditing={(nativeEvent) => { addFocusTask(nativeEvent.text)}
+          onSubmitEditing={({nativeEvent}) => {
+            console.log("Native Event", nativeEvent)
+            setStoreTextInput(nativeEvent.text);
+          }
           }  />
         <View style={styles.btnContainer}>
-          <RoundedBtn title={"+"} size={50}  />
+          <RoundedBtn title={"+"} size={50} onPress={() => {addFocus(storeTextInput)}} />
+          {console.log("[Focus]: ", storeTextInput)}
         </View>
       </View>
     </View>
