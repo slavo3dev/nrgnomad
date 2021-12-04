@@ -22,8 +22,7 @@ export const CountdownTimer = ({time}) => {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Focus for next: {time}s</Text>
-            <Text style={styles.text}>{secondsToMinutes}:{secondsToSeconds}</Text>
+            <Text style={styles.text}>Focus for next: {secondsToMinutes}:{secondsToSeconds}</Text>
         </View>
     )
 }
