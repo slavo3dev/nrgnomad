@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {StyleSheet,Text,View} from 'react-native';
-import { Focus } from "./src/features/focus"
+import {Focus} from "./src/features/focus"
+import { CountdownTimer } from './src/components/CountdownTimer';
 
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
       {focusTask ? <Text>Habit TO FOCUS: </Text> : <Focus addFocus={setFocusTask} />}
       {console.log("[APP]: ", focusTask)}
       <Text>{focusTask}</Text>
+      <CountdownTimer time={120} />
     </View>
   );
 }
