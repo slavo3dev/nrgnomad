@@ -15,7 +15,7 @@ export default StyleSheet.create({
     fontSize: fontSizes.md,
   },
   inputContainer: {
-    flex: 0.1,
+    flex: 0.3,
     flexDirection: 'row',
   },
   textInput: {
