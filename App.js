@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import {StyleSheet,Text,View} from 'react-native';
 import {Focus} from "./src/features/focus"
-import { CountdownTimer } from './src/components/CountdownTimer';
+import {CountdownTimer} from './src/components/CountdownTimer';
+import { brandColors } from './src/utils/colors';
 
 
 export default function App() {
@@ -19,7 +20,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#346AAF',
+    backgroundColor: brandColors.darkBlue,
     paddingTop: 60,
     paddingLeft: 6,
     paddingRight: 6

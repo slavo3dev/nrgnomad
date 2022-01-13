@@ -1,5 +1,6 @@
 import React  from 'react';
 import {StyleSheet,Text,TouchableOpacity} from 'react-native';
+import { brandColors } from '../../utils/colors';
 
 
 
@@ -28,8 +29,8 @@ const styles = (size) =>
       height: size,
       alignItems: "center",
       justifyContent: "center",
-      borderColor: "#fff",
+      borderColor: brandColors.white,
       borderWidth: 2,
     },
-    text: { color: "#fff", fontSize: 18 },
+    text: { color: brandColors.white, fontSize: 18 },
   });

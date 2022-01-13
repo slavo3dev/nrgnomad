@@ -1,16 +1,17 @@
 import React from "react";
-import {View,Text, StyleSheet} from 'react-native'
+import {View,Text,StyleSheet} from 'react-native'
+import { brandColors } from "../../utils/colors";
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "yellow",
+        backgroundColor: brandColors.yellow,
         width: "100%",
         alignItems: "center",
         justifyContent: "center"
     },
     text: {
-        color: "black"
+        color: brandColors.darkBlue
     }
 })
 
