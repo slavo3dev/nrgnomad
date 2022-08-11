@@ -1,2 +1,3 @@
 # nrgnomad
 # Nomad
+# digital nomad
